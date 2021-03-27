@@ -1,0 +1,15 @@
+{
+    "name": "adrian/y",
+    "authors": [
+        {
+            "name": "Adrian Kocelj",
+            "email": "adriank@gmx.de"
+        }
+    ],
+	"autoload": {
+		"psr-4": {
+			"app\\": "./"
+		}
+	},
+    "require": {}
+}
