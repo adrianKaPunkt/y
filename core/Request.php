@@ -14,10 +14,13 @@ namespace app\core;
  {
 	 public function getPath() {
 		$path = $_SERVER['REQUEST_URI'] ?? '/';
+		//Checkt, ob die URL ein Fragezeichen enthält
 		$position = strpos($path, '?');
+		//Wenn die URL kein Fragezeichen enthält, dann ausgeben.
 		if($position === false) {
 			return $path;
 		}
+		//URL-String vor dem Fragezeichen ausgeben
 		return substr($path, 0, $position);
 	 }
 
